@@ -1,0 +1,20 @@
+const markers = [
+  {
+    "name": "Apremont-sur-Allier",
+    "url": "https://www.les-plus-beaux-villages-de-france.org/fr/nos-villages/apremont-sur-allier/",
+    "lat": "46.9062",
+    "lng": "3.0482",
+  },
+  {
+    "name": "Estaing",
+    "url": "https://www.les-plus-beaux-villages-de-france.org/fr/nos-villages/estaing/",
+    "lat": "44.5554",
+    "lng": "2.672",
+  },
+  {
+    "name": "Barfleur",
+    "url": "https://www.les-plus-beaux-villages-de-france.org/fr/nos-villages/barfleur/",
+    "lat": "49.6701",
+    "lng": "-1.2637",
+  }
+]
