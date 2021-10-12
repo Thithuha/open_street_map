@@ -1,14 +1,21 @@
-const map = L.map('mapid').setView([51.505, -0.09], 13);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+const baseMapLayer = new ol.layer.Tile({
+  source: new ol.source.OSM()
+});
 
-}).addTo(map);
+const center = ol.proj.fromLonLat([2.208, 46.498]);
 
-for (const i=0; i < markers.length; ++i)
-{
-L.marker( [markers[i].lat, markers[i].lng] )
-    .bindPopup('<a href="' + msrkers[i].url + '"target="_blank" rel="noopener">' + markers[i].name + '</a>')
-    // .openPopup();
-    .addTo( map );
-}
+const view = new ol.View({
+  center: center,
+  zoom: 6
+});
+
+const layer = new ol.layer.Tile({
+  source: new ol.source.OSM()
+});
+
+const map = new ol.Map({
+  target: 'map',
+  layers: [layer],
+  view: view
+});
