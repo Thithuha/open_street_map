@@ -7,7 +7,7 @@ const center = ol.proj.fromLonLat([2.208, 46.498]);
 
 const view = new ol.View({
   center: center,
-  zoom: 6
+  zoom: 7
 });
 
 const layer = new ol.layer.Tile({
