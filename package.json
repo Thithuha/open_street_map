@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:Thithuha/open_street_map.git",
   "author": "Thithuha",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "ol": "^6.9.0"
+  }
 }
